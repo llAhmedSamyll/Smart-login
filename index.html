@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slide Navbar</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+
+      <div id="ddd" class="signup">
+        <div class="mx-3">
+          <label for="chk" aria-hidden="true">Sign up</label>
+          <input
+            id="usNameInput"
+            class="form-control is-invalid"
+            type="text"
+            name="txt"
+            placeholder="User name"
+          />
+          <p id="msgName" class="d-none">
+            Name must start with a letter, 3-20 chars, only letters, numbers,
+            spaces, _ or ., and end with letter/number.
+          </p>
+          <input
+            id="usEmailInput"
+            class="form-control is-invalid"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <p id="msgEmail" class="d-none">
+            Email must be a valid format (e.g. user@example.com)
+          </p>
+          <p id="msgEmailEx" class="d-none">
+            Email already exists. Try another one.
+          </p>
+          <input
+            id="usPassInput"
+            class="form-control is-invalid"
+            type="password"
+            name="pswd"
+            placeholder="Password"
+          />
+          <p id="msgPass" class="d-none">
+            Password must be at least 9 characters long. You can use letters,
+            numbers, or symbols.
+          </p>
+          <button id="signUpBtn">Sign up</button>
+        </div>
+      </div>
+
+      <div class="login">
+        <div class="mx-3">
+          <label for="chk" aria-hidden="true">Login</label>
+          <input
+            id="usLoginName"
+            class="form-control"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            id="usLoginPass"
+            class="form-control"
+            type="password"
+            name="pswd"
+            placeholder="Password"
+          />
+          <p id="loginAlert" class="d-none">
+            Email or password is incorrect
+          </p>
+          <button id="loginBtn">Login</button>
+        </div>
+        <p class="text-center link">
+          you don't have an account ?
+          <a href="" class="text-decoration-none">sign up</a>
+        </p>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
